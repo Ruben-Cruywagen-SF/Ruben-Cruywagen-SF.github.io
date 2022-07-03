@@ -1013,14 +1013,7 @@ if (!localStorage.getItem("initialLoad")) {
   getPuzzlePlaces();
 
   localStorage.setItem("peoplePuzzle", "true");
-
-  localStorage.removeItem("placesPuzzle");
-  localStorage.removeItem("categoryPlacesBtn");
-
-  if (!localStorage.getItem("categoryPeopleBtn")) {
-    localStorage.setItem("categoryPeopleBtn", "true");
-    window.location.reload();
-  }
+  localStorage.setItem("initialLoad", "true");
 
   localStorage.setItem("initialLoad", "true");
   localStorage.setItem("wins", "0");
